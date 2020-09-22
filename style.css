@@ -1,0 +1,22 @@
+body {
+  background-color: wheat;
+}
+
+h1 {
+  background-color: #fc0fc0;
+  font-weight: italic;
+  border: 0;
+  border-radius: 6px;
+  border-width: max-width;
+  text-align: center;
+}
+
+button {
+  background-color: #f05f70;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
