@@ -2,19 +2,27 @@ import React from 'react';
 import './book.css';
 import './Product';
 import Product from './Product';
+import BookCounter from './BookCounter';
 
 const products = [
   {
    name: "Snow White",
-   price: "£3.99",
-   description: "A classic"
+   price: "4.99",
+   description: "Mirror mirror on the wall..."
   },
   {
     name: "Cinderella",
     price: "£5.99",
-    description: "Another classic"
+    description: "Before the clock strikes midnight..."
+
+  },
+  {
+    name: "Peter Pan",
+    price: "£6.99",
+    description: "I do believe in fairies, I do! I do!"
 
   }
+
 ]
 
 function App() {
@@ -34,6 +42,7 @@ function Greeting(user) {
           Where Books Come to Life
         </h2>
       </header>
+      {Greeting(name)}
       {products.map(product => (
         <Product
         name={product.name}
@@ -41,9 +50,8 @@ function Greeting(user) {
         description={product.description}
         />
       ))}
-    
-
-      {Greeting(name)}
+      <h1 className='header' >Welcome to My Library</h1>
+      <BookCounter library={{name:"Beyonce",theme:"Modern"}}/>
     </div>
   );
 }
